@@ -1,0 +1,117 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #593be1;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.toDoBox{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 35rem;
+    gap: 2rem;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1rem;
+    color: white;
+}
+.heading i{
+    font-size: 1.5rem;
+}
+
+.input_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24273D;
+    border-radius: 10px;
+}
+.input_section input{
+    border: none;
+    border-radius: 10px;
+    background-color: #24273D;   
+    outline: none;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.input_section input::placeholder{
+    color: rgb(111, 111, 128);
+}
+.input_section i{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+    
+.input_section i::after{
+    content: "Add New Note";
+    display: flex;
+    color: #9ca0c7;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+}
+    
+.input_section i:active{
+    transform: scale(120%);
+}
+    
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24273D; 
+    color: white; 
+    padding: 0rem 1rem;
+    border-radius: 0px 10px 0px 10px;
+    border-bottom: 1px solid white;
+}
+.items i{
+   font-size: 1.5rem;
+   cursor: pointer;
+   text-align: center;
+}
+.items i:nth-child(2)::after{
+   content: "edit";
+   display: flex;
+   color: #9ca0c7;
+   font-size: 0.7rem;
+   padding: 0.3rem;
+   letter-spacing: 0.1rem;
+}
+.items i:last-child::after{
+   content: "delete";
+   display: flex;
+   color: #9ca0c7;
+   font-size: 0.7rem;
+   padding: 0.3rem;
+   letter-spacing: 0.1rem;
+}
+.items i:active{
+    transform: scale(120%);
+    
+}
+
+#itemerror{
+    color: aliceblue;
+}
+
+#savetoggle::after{
+    content: "Save Edit";
+}
