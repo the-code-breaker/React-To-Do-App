@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+![Screenshot 2023-07-02 124558](https://github.com/the-code-breaker/React-To-Do-App/assets/93040364/04457cc0-7c34-439a-b0a3-0e0f984bf6a8)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
